@@ -1,0 +1,52 @@
+<!doctype HTML>
+
+<html>
+
+    <head>
+    
+        <title>Bit Converter</title>
+        <script src="bit_converter.js"></script>
+        <h1><br />NUMBER SYSTEM CONVERTER </h1>
+        
+    </head>
+    
+    <body>
+    
+        <div>
+            <h2>Binary</h2>
+            <input id="bin">    <br />
+            <button onclick="convert(document.getElementById('bin').value, 'binOutput', 'bin', 'dec')">Convert to Decimal</button><br />
+            <button onclick="convert(document.getElementById('bin').value, 'binOutput', 'bin', 'hex')">Convert to Hex</button><br />
+            <button onclick="convert(document.getElementById('bin').value, 'binOutput', 'bin', 'octa')">Convert to OctaL</button><br />
+            <span id="binOutput"></span>
+        </div>
+        
+        <div>
+            <h2>Decimal</h2>
+            <input id="dec"><br />
+            <button onclick="convert(document.getElementById('dec').value, 'decOutput', 'dec', 'bin')">Convert to Binary</button><br />
+            <button onclick="convert(document.getElementById('dec').value, 'decOutput', 'dec', 'hex')">Convert to Hex</button><br />
+            <button onclick="convert(document.getElementById('dec').value, 'decOutput', 'dec', 'octa')">Convert to OctaL</button><br />
+            <span id="decOutput"></span>
+        </div>
+         
+        <div>
+            <h2>Hex</h2>
+            <input id="hex"><br />
+            <button onclick="convert(document.getElementById('hex').value, 'hexOutput', 'hex', 'bin')">Convert to Binary</button><br />
+            <button onclick="convert(document.getElementById('hex').value, 'hexOutput', 'hex', 'dec')">Convert to Decimal</button><br />
+            <button onclick="convert(document.getElementById('hex').value, 'hexOutput', 'hex', 'octa')">Convert to Octal</button><br />
+            <span id="hexOutput"></span>
+        </div>
+    
+        <div>
+            <h2>Octal</h2>
+            <input id="octal"><br />
+            <button onclick="convert(document.getElementById('octal').value, 'octalOutput', 'octal', 'bin')">Convert to Binary</button><br />
+            <button onclick="convert(document.getElementById('octal').value, 'octalOutput', 'octal', 'dec')">Convert to Decimal</button><br />
+            <button onclick="convert(document.getElementById('octal').value, 'octalOutput', 'octal', 'hex')">Convert to Hex</button><br />
+            <span id="octalOutput"></span>
+        </div>
+    </body>
+
+</html>
